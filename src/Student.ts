@@ -1,13 +1,14 @@
 import {Person} from "./Person.js";
-import { Course } from "./Course.js";
+import {Course} from "./Course.js";
 
 export class Student extends Person {
     readonly _stdId: number;
     readonly _stdEmail: string;
     readonly _stdPassword: string;
-    readonly _stdSection: string;
+    readonly _stdSection?: string;
     readonly _stdCoursesEnrolled?: Course[];
-    constructor(nic: number, stdID: number, stdEmail: string, stdPassword: string, stdSection: string="", stdCoursesEnrolled: Course[]=[])
+    constructor(nic: number, stdID: number, stdEmail: string, stdPassword: string, 
+        stdSection: string, stdCoursesEnrolled: Course[])
     {
         super(nic);
         this._stdId = stdID;
