@@ -11,5 +11,7 @@ for (let i: number = 0; i < noofStudents; i++){
 
 let lmsSession = new LMS(students, noofStudents);
 
-for (let i: number = 0; i < noofStudents; i++)
-    lmsSession.signIn(i, "12345678");
+for (let i: number = 0; i < noofStudents; i++){
+    lmsSession.signIn(100+i, "12345678");
+    lmsSession.signOut(100+i);
+}
