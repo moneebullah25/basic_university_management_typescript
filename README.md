@@ -8,6 +8,21 @@ This project is developed using TypeScript, a superset of JavaScript, and it is 
 
 The project consists of four main classes: Person, Student, Teacher, and Course. The Person class is the base class that holds basic information such as NIC, name, age, and gender. 
 
+**Course Class Structure**
+The Course class holds information such as course ID, name, and credit hours.
+
+**Usuage**
+```typescript
+let courses: Course[] = [
+    new Course("CSC101", "Intro to Computer Science", 3),
+    new Course("MAT201", "Calculus", 4), 
+    new Course("ENG101", "English Composition", 3), 
+    new Course("PHY101", "Introduction to Physics", 4), 
+    new Course("HIS101", "World History", 3),
+    new Course("ART101", "Introduction to Art", 3)
+]
+```
+
 **Student Class STrucutre**
 
 The Student class inherits from the Person class and holds additional information such as student ID, email, password, section, and courses enrolled. 
@@ -33,21 +48,6 @@ const teachers: Teacher[] = [
     new Teacher(456, 11, "teacher1@university.edu", "password1", [courses[1]]),
     new Teacher(457, 12, "teacher2@university.edu", "password2", [courses[3]])
 ];
-```
-
-**Course Class Structure**
-The Course class holds information such as course ID, name, and credit hours.
-
-**Usuage**
-```typescript
-let courses: Course[] = [
-    new Course("CSC101", "Intro to Computer Science", 3),
-    new Course("MAT201", "Calculus", 4), 
-    new Course("ENG101", "English Composition", 3), 
-    new Course("PHY101", "Introduction to Physics", 4), 
-    new Course("HIS101", "World History", 3),
-    new Course("ART101", "Introduction to Art", 3)
-]
 ```
 
 **LMS Class Structure**
